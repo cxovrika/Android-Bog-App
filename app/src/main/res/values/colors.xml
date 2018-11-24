@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff8b2d</color>
+    <color name="colorPrimaryDark">#be5f12</color>
+    <color name="colorAccent">#ff8b2d</color>
+    <color name="colorProfileValues">#000000</color>
+    <color name="colorActivesBlockHeader">#000000</color>
+    <color name="colorTransactionMerchant">#000000</color>
+    <color name="colorTransactionsTotalIncome">#00b700</color>
+    <color name="colorTransactionsTotalOutcome">#FF0000</color>
+</resources>

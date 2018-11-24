@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:id="@+id/transaction_lari_logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bg_lari_shape"
+        android:contentDescription="@string/lari_logo_description"
+        android:padding="18dp"
+        android:src="@drawable/lari"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/transaction_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/transaction_date_default_text"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/transaction_lari_logo"
+        app:layout_constraintTop_toTopOf="@+id/transaction_lari_logo"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/transaction_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/transaction_type_default_text"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/transaction_lari_logo"
+        app:layout_constraintStart_toStartOf="@+id/transaction_date_text"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/transaction_merchant_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/transaction_merchant_default_text"
+        android:textColor="@color/colorTransactionMerchant"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/transaction_type_text"
+        app:layout_constraintStart_toStartOf="@+id/transaction_date_text"
+        app:layout_constraintTop_toBottomOf="@+id/transaction_date_text" />
+
+    <TextView
+        android:id="@+id/transaction_value_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:text="@string/transaction_currency_default_text"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/transaction_amount_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/transaction_change_value_default_text"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/transaction_value_currency"
+        app:layout_constraintEnd_toStartOf="@+id/transaction_value_currency"
+        app:layout_constraintTop_toTopOf="@+id/transaction_value_currency"
+        tools:ignore="SmallSp" />
+</android.support.constraint.ConstraintLayout>

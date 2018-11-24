@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:background="@drawable/ic_day_bg"-->
+
+
+    <ImageView
+        android:id="@+id/transactions_header_background"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/transactions_background_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_day_bg" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/transactions_recycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transactions_header_background" />
+
+    <View
+        android:id="@+id/transactionis_header_divider_line"
+        android:layout_width="2dp"
+        android:layout_height="70dp"
+        android:background="@drawable/bg_linear_shape"
+        app:layout_constraintBottom_toTopOf="@+id/transactions_recycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/transactions_header_background" />
+
+    <TextView
+        android:id="@+id/transactions_total_income_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/transactions_total_income_default_text"
+        android:textColor="@color/colorTransactionsTotalIncome"
+        app:layout_constraintBottom_toTopOf="@+id/transactions_total_income_value"
+        app:layout_constraintEnd_toStartOf="@+id/transactionis_header_divider_line"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/transactionis_header_divider_line" />
+
+    <TextView
+        android:id="@+id/transactions_total_income_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/transactions_total_income_default_value"
+        android:textColor="@color/colorTransactionsTotalIncome"
+        app:layout_constraintBottom_toBottomOf="@+id/transactionis_header_divider_line"
+        app:layout_constraintEnd_toStartOf="@+id/transactionis_header_divider_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transactions_total_income_header" />
+
+    <TextView
+        android:id="@+id/transactions_total_outcome_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/transactions_total_outcome_default_text"
+        android:textColor="@color/colorTransactionsTotalOutcome"
+        app:layout_constraintBottom_toTopOf="@+id/transactions_total_outcome_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/transactionis_header_divider_line"
+        app:layout_constraintTop_toTopOf="@+id/transactionis_header_divider_line" />
+
+    <TextView
+        android:id="@+id/transactions_total_outcome_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/transactions_total_outcome_default_value"
+        android:textColor="@color/colorTransactionsTotalOutcome"
+        app:layout_constraintBottom_toBottomOf="@+id/transactionis_header_divider_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/transactionis_header_divider_line"
+        app:layout_constraintTop_toBottomOf="@+id/transactions_total_outcome_header" />
+
+</android.support.constraint.ConstraintLayout>
